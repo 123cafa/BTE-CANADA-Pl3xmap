@@ -1,0 +1,186 @@
+{
+    "key": "Colors", //Internal ID
+    "label": "Colors", //Name in control box
+    "updateInterval": 60, //In seconds
+    "showControls": true, //Show in control box
+    "defaultHidden": false, //Hidden when map is first opened
+    "priority": 1, //Order in Control Box
+    "zIndex": 1000, //Layer on map (not terrain level)
+    "markers": [
+        {
+            "type": "circ",
+            "data": {
+                "key": "Red",
+                "center": {
+                        "x": -12402926, //Point Name
+                        "z": -7108518
+                },
+                "radius": 2
+            },
+            "options": {
+                "stroke": {
+                    "weight": 5,
+                    "color": -65536
+                },
+                "fill": {
+                    "enabled": true
+                },
+                "tooltip": {
+                    "content": "Red", //Tooltip Name
+                    "direction": 2,
+                    "sticky": true
+                }
+            }
+        },
+        {
+            "type": "circ",
+            "data": {
+                "key": "Blue",
+                "center": {
+                        "x": -12402826, //Point Name
+                        "z": -7108418
+                },
+                "radius": 2
+            },
+            "options": {
+                "stroke": {
+                    "weight": 5,
+                    "color": 4281567487
+                },
+                "fill": {
+                    "enabled": true
+                },
+                "tooltip": {
+                    "content": "Blue", //Tooltip Name
+                    "direction": 2,
+                    "sticky": true
+                }
+            }
+        },
+        {
+            "type": "circ",
+            "data": {
+                "key": "Dark Blue",
+                "center": {
+                        "x": -12402826, //Point Name
+                        "z": -7108518
+                },
+                "radius": 2
+            },
+            "options": {
+                "stroke": {
+                    "weight": 5,
+                    "color": 4281872081
+                },
+                "fill": {
+                    "enabled": true
+                },
+                "tooltip": {
+                    "content": "Dark Blue", //Tooltip Name
+                    "direction": 2,
+                    "sticky": true
+                }
+            }
+        },
+        {
+            "type": "circ",
+            "data": {
+                "key": "Yellow",
+                "center": {
+                        "x": -12402726, //Point Name
+                        "z": -7108418
+                },
+                "radius": 2
+            },
+            "options": {
+                "stroke": {
+                    "weight": 5,
+                    "color": 4292214589
+                },
+                "fill": {
+                    "enabled": true
+                },
+                "tooltip": {
+                    "content": "Yellow", //Tooltip Name
+                    "direction": 2,
+                    "sticky": true
+                }
+            }
+        },
+        {
+            "type": "circ",
+            "data": {
+                "key": "Green",
+                "center": {
+                        "x": -12402626, //Point Name
+                        "z": -7108418
+                },
+                "radius": 2
+            },
+            "options": {
+                "stroke": {
+                    "weight": 5,
+                    "color": 4279762704
+                },
+                "fill": {
+                    "enabled": true
+                },
+                "tooltip": {
+                    "content": "Green", //Tooltip Name
+                    "direction": 2,
+                    "sticky": true
+                }
+            }
+        },
+        {
+            "type": "circ",
+            "data": {
+                "key": "Violet",
+                "center": {
+                        "x": -12402526, //Point Name
+                        "z": -7108418
+                },
+                "radius": 2
+            },
+            "options": {
+                "stroke": {
+                    "weight": 5,
+                    "color": 4294447359
+                },
+                "fill": {
+                    "enabled": true
+                },
+                "tooltip": {
+                    "content": "Violet", //Tooltip Name
+                    "direction": 2,
+                    "sticky": true
+                }
+            }
+        },
+        {
+            "type": "circ",
+            "data": {
+                "key": "Orange",
+                "center": {
+                        "x": -12402426, //Point Name
+                        "z": -7108418
+                },
+                "radius": 2
+            },
+            "options": {
+                "stroke": {
+                    "weight": 5,
+                    "color": 4294019086
+                },
+                "fill": {
+                    "enabled": true
+                },
+                "tooltip": {
+                    "content": "Orange", //Tooltip Name
+                    "direction": 2,
+                    "sticky": true
+                }
+            }
+        }
+    ]
+}

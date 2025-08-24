@@ -1,0 +1,93 @@
+<html>
+	<style>
+		.container {
+			display: grid;
+			grid-template-columns: auto auto;
+			gap: 10px 10px;
+			padding: 10px;
+			background-color: dodgerblue;
+			width: 300px;
+		}
+		.img_small {
+			width: 135px;
+			background-color: red;
+		}
+		.img_large {
+			grid-column: 1 / span 2;
+			width: 300px;
+			height: 150px;
+			background-color: yellow;
+			object-fit: cover;
+		}
+		.text {
+			grid-column: 1 / span 2;
+		}
+		.title_text {
+			position: absolute;
+			top: 5px;
+			left: 10px;
+		}
+		.image_text {
+			position: relative;
+			bottom: 1px;
+			left: 3px;
+		}
+		.flags {
+			display: flex;
+			position: relative;
+			top: 20px;
+			left: 20px;
+			background-color: green;
+		}
+		.rectangle {
+			position: relative;
+			top: 15px;
+			left: 3px;
+			height: 50px;
+			width: 10px;
+		}
+	</style>
+	<body>
+		<div class='container'>
+			<img class="img_large" src='jerma.jpg' alt='img3' />
+				<div class='flags'>
+					<img
+						src='jerma.jpg'
+						alt='flag1'
+						width='40px'
+						height='20px'
+					/>
+					<img
+						src='jerma.jpg'
+						alt='flag2'
+						width='40px'
+						height='20px'
+					/>
+				</div>
+				<div class='title_text'>
+					<h2>Victoria, BC</h2>
+				</div>
+			<div class='text'>
+				<h1>Victoria, BC</h1>
+				<p>
+					Victoria is the capital of British Columbia. Nicknamed
+					<em>the Garden City </em>, it is famous for the Butchart
+					Gardens, Fairmont Express hotel and its beautiful coastline.
+					It also contains the oldest China Town in Canada.
+				</p>
+				<p>
+					You can visit here by using
+					<span style='color: red'>/warp (Warp name)</span> on the
+					server.
+				</p>
+			</div>
+			<div class='img_small'>
+				<img src='jerma.jpg' alt='img1' width='135px'/>
+					<div class='image_text'>Jerma's here!</div>
+			</div>
+			<div class='img_small'>
+				<img src='jerma.jpg' alt='img2' width='135px'/>
+			</div>
+		</div>
+	</body>
+</html>
