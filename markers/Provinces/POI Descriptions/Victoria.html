@@ -67,7 +67,12 @@
 			text-decoration: underline;
 		}
 	</style>
-
+	<script>
+		function copy_warp(warp_name) {
+  			navigator.clipboard.writeText(warp_name);
+ 			alert('Copied warp command');
+		}
+	</script>
 	<body>
 		<div class='container'>
 			<div class='img_large'>
@@ -81,18 +86,12 @@
 				</div>
 			</div>
 			<div class='text'>
-				<h1>Niagara Falls, ON</h1>
+				<h1>Victoria, BC</h1>
 				<p style='color: snow;'>
-					Niagara Falls is composed of three waterfalls on the border of Ontario and New York. These falls have the highest flow rate of any waterfall in North America. They are also known for the terrifying practice of barrel jumping, tumbling over the falls while inside a barrel, with mixed results.
+					Victoria is the capital of British Columbia. Nicknamed <em>the Garden City </em>, it is famous for the Butchart Gardens, Fairmont Express hotel and its beautiful coastline. It also contains the oldest China Town in Canada.
 				</p>
 				<p>
-					You can visit here by using<span class='warp_text' onclick='copy_warp()'> /warp Victoria</span> on the server.
-					<script>
-						function copy_warp() {
-				  			navigator.clipboard.writeText('/warp Victoria');
-				 			alert('Copied warp command');
-						}
-					</script>
+					You can visit here by using <span class='warp_text' onclick='copy_warp(this.outerText)'>/warp Victoria</span> on the server.
 				</p>
 			</div>
 			<div class='img_small'>

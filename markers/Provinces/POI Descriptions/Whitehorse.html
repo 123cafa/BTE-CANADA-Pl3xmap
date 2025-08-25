@@ -67,7 +67,12 @@
 			text-decoration: underline;
 		}
 	</style>
-
+	<script>
+		function copy_warp(warp_name) {
+  			navigator.clipboard.writeText(warp_name);
+ 			alert('Copied warp command');
+		}
+	</script>
 	<body>
 		<div class='container'>
 			<div class='img_large'>
@@ -86,13 +91,7 @@
 					Whitehorse is
 				</p>
 				<p>
-					You can visit here by using<span class='warp_text' onclick='copy_warp()'> /warp Whitehorse</span> on the server.
-					<script>
-						function copy_warp() {
-				  			navigator.clipboard.writeText('/warp Whitehorse');
-				 			alert('Copied warp command');
-						}
-					</script>
+					You can visit here by using <span class='warp_text' onclick='copy_warp()'>/warp Whitehorse</span> on the server.
 				</p>
 			</div>
 			<div class='img_small'>

@@ -67,7 +67,12 @@
 			text-decoration: underline;
 		}
 	</style>
-
+	<script>
+		function copy_warp(warp_name) {
+  			navigator.clipboard.writeText(warp_name);
+ 			alert('Copied warp command');
+		}
+	</script>
 	<body>
 		<div class='container'>
 			<div class='img_large'>
@@ -86,13 +91,7 @@
 					Regina is the capital of Saskatchewan. A major exporter of potash and wheat, it is surrounded by generational farmland. Attractions include the Royal Saskatchewan Museum, Hotel Saskatchewan and the RCMP's national training centre.
 				</p>
 				<p>
-					You can visit here by using<span class='warp_text' onclick='copy_warp()'> /warp Regina</span> on the server.
-					<script>
-						function copy_warp() {
-				  			navigator.clipboard.writeText('/warp Regina');
-				 			alert('Copied warp command');
-						}
-					</script>
+					You can visit here by using <span class='warp_text' onclick='copy_warp(this.outerText)'>/warp Regina</span> on the server.
 				</p>
 			</div>
 			<div class='img_small'>

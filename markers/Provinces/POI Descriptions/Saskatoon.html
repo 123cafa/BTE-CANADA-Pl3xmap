@@ -67,7 +67,12 @@
 			text-decoration: underline;
 		}
 	</style>
-
+	<script>
+		function copy_warp(warp_name) {
+  			navigator.clipboard.writeText(warp_name);
+ 			alert('Copied warp command');
+		}
+	</script>
 	<body>
 		<div class='container'>
 			<div class='img_large'>
@@ -83,16 +88,10 @@
 			<div class='text'>
 				<h1>Saskatoon, SK</h1>
 				<p style='color: snow;'>
-					Saskatoon is the largest city in Saskatchewan. It gained the nickname <em>City of Bridges<em> due to it's nine river crossings. The University of Sasktchewan is located here as well as Canada's national synchrotron (particle collider) facility.
+					Saskatoon is the largest city in Saskatchewan. It gained the nickname <em>City of Bridges</em> due to it's nine river crossings. The University of Sasktchewan is located here as well as Canada's national synchrotron (particle collider) facility.
 				</p>
 				<p>
-					You can visit here by using<span class='warp_text' onclick='copy_warp()'> /warp Saskatoon</span> on the server.
-					<script>
-						function copy_warp() {
-				  			navigator.clipboard.writeText('/warp Saskatoon');
-				 			alert('Copied warp command');
-						}
-					</script>
+					You can visit here by using <span class='warp_text' onclick='copy_warp(this.outerText)'>/warp Saskatoon</span> on the server.
 				</p>
 			</div>
 			<div class='img_small'>

@@ -67,7 +67,12 @@
 			text-decoration: underline;
 		}
 	</style>
-
+	<script>
+		function copy_warp(warp_name) {
+  			navigator.clipboard.writeText(warp_name);
+ 			alert('Copied warp command');
+		}
+	</script>
 	<body>
 		<div class='container'>
 			<div class='img_large'>
@@ -81,21 +86,12 @@
 				</div>
 			</div>
 			<div class='text'>
-					<h2>Vancouver, BC</h2>
-				</div>
-			</div>
-			<div class='text'>
+				<h1>Vancouver, BC</h1>
 				<p style='color: snow;'>
 					Vancouver is the largest city in British Columbia. A bustling metroplis, it is the home to many international events such as the Olympics, TedX talks and green peace. It is also a popular filming location for movie studios.
 				</p>
 				<p>
-					You can visit here by using<span style='color: orange'> /warp Vancouver_BC</span> on the server.
-					<script>
-						function copy_warp() {
-				  			navigator.clipboard.writeText('/warp Vancouver_BC');
-				 			alert('Copied warp command');
-						}
-					</script>
+					You can visit here by using <span class='warp_text' onclick='copy_warp(this.outerText)'>/warp Vancouver_BC</span> on the server.
 				</p>
 			</div>
 			<div class='img_small'>

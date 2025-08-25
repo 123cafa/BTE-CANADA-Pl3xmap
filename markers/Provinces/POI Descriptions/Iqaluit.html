@@ -67,7 +67,12 @@
 			text-decoration: underline;
 		}
 	</style>
-
+	<script>
+		function copy_warp(warp_name) {
+  			navigator.clipboard.writeText(warp_name);
+ 			alert('Copied warp command');
+		}
+	</script>
 	<body>
 		<div class='container'>
 			<div class='img_large'>
@@ -86,13 +91,7 @@
 					Iqaluit
 				</p>
 				<p>
-					You can visit here by using<span class='warp_text' onclick='copy_warp()'> /warp Iqaluit</span> on the server.
-					<script>
-						function copy_warp() {
-				  			navigator.clipboard.writeText('/warp Iqaluit');
-				 			alert('Copied warp command');
-						}
-					</script>
+					You can visit here by using <span class='warp_text' onclick='copy_warp(this.outerText)'>/warp Iqaluit</span> on the server.
 				</p>
 			</div>
 			<div class='img_small'>

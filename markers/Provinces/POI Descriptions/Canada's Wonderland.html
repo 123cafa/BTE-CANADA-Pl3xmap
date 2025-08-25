@@ -67,7 +67,12 @@
 			text-decoration: underline;
 		}
 	</style>
-
+	<script>
+		function copy_warp(warp_name) {
+  			navigator.clipboard.writeText(warp_name);
+ 			alert('Copied warp command');
+		}
+	</script>
 	<body>
 		<div class='container'>
 			<div class='img_large'>
@@ -86,13 +91,7 @@
 					Canada's Wonderland is the largest and most visited amusement park in Canada. As of 2025, it operates over 200 attractions, 60 thrill rides and 18 roller coasters. 3,800,000 thrill seekers visit every year. Will you be one of them?
 				</p>
 				<p>
-					You can visit here by using<span class='warp_text' onclick='copy_warp()'> /warp Canada'sWonderland</span> on the server.
-					<script>
-						function copy_warp() {
-				  			navigator.clipboard.writeText('/warp Canada\'sWonderland');
-				 			alert('Copied warp command');
-						}
-					</script>
+					You can visit here by using<span class='warp_text' onclick='copy_warp(this.outerText)'> /warp Canada'sWonderland</span> on the server.
 				</p>
 			</div>
 			<div class='img_small'>

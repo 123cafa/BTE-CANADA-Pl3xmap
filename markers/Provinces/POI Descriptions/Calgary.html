@@ -67,7 +67,12 @@
 			text-decoration: underline;
 		}
 	</style>
-
+	<script>
+		function copy_warp(warp_name) {
+  			navigator.clipboard.writeText(warp_name);
+ 			alert('Copied warp command');
+		}
+	</script>
 	<body>
 		<div class='container'>
 			<div class='img_large'>
@@ -86,13 +91,7 @@
 					Calgary is a city in Alberta. Ranked as the third most livable city in the world in 2022 it contains the most extensive walking and cycling pathway network in North America. Here you can find the Telus Convention Centre, Calgary Tower and, Canada's Olympic and Sports Hall's of Fame.
 				</p>
 				<p>
-					You can visit here by using<span class='warp_text' onclick='copy_warp()'> /warp Calgary</span> on the server.
-					<script>
-						function copy_warp() {
-				  			navigator.clipboard.writeText('/warp Calgary');
-				 			alert('Copied warp command');
-						}
-					</script>
+					You can visit here by using <span class='warp_text' onclick='copy_warp(this.outerText)'>/warp Calgary</span> on the server.
 				</p>
 			</div>
 			<div class='img_small'>

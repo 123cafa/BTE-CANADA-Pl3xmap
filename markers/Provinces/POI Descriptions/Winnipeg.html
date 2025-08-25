@@ -67,7 +67,12 @@
 			text-decoration: underline;
 		}
 	</style>
-
+	<script>
+		function copy_warp(warp_name) {
+  			navigator.clipboard.writeText(warp_name);
+ 			alert('Copied warp command');
+		}
+	</script>
 	<body>
 		<div class='container'>
 			<div class='img_large'>
@@ -86,13 +91,7 @@
 					Winnipeg is the capital of Manitoba. It contains 26 National Historic Sites within its borders. Structures of interest include the Canadian Museum for Human Rights and The Royal Canadian Mint which produces all of Canada's coinage.
 				</p>
 				<p>
-					You can visit here by using<span class='warp_text' onclick='copy_warp()'> /warp Winnipeg_MB</span> on the server.
-					<script>
-						function copy_warp() {
-				  			navigator.clipboard.writeText('/warp Winnipeg_MB');
-				 			alert('Copied warp command');
-						}
-					</script>
+					You can visit here by using<span class='warp_text' onclick='copy_warp(this.outerText)'> /warp Winnipeg_MB</span> on the server.
 				</p>
 			</div>
 			<div class='img_small'>
