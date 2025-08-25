@@ -164,6 +164,46 @@
         {
             "type": "icon",
             "data": {
+                "key": "Saskatoon",
+                "point": {
+                        "x": -11136439, //Point Name
+                        "z": -7116588
+                },
+                "image": "marker",
+                "anchor": {
+                    "x": 4.5,
+                    "z": 17.0
+                },
+                "size": {
+                    "x": 20,
+                    "z": 20
+                }
+            },
+            "options": {
+                "stroke": {
+                    "weight": 5,
+                    "color": 4281872081
+                },
+                "fill": {
+                    "enabled": true
+                },
+                "tooltip": {
+                    "content": "Saskatoon", //Tooltip Name
+                    "direction": 2,
+                    "sticky": true
+                },
+                "popup": {
+                    "content": "An example.", //HTML of the popup
+                    "offset": {
+                        "x": 2,
+                        "z": -8
+                    }
+                }
+            }
+        },
+        {
+            "type": "icon",
+            "data": {
                 "key": "Winnipeg",
                 "point": {
                         "x": -10485141, //Point Name
@@ -272,10 +312,50 @@
         {
             "type": "icon",
             "data": {
+                "key": "Niagara Falls",
+                "point": {
+                        "x": -9018351, //Point Name
+                        "z": -6177423
+                },
+                "image": "marker",
+                "anchor": {
+                    "x": 4.5,
+                    "z": 17.0
+                },
+                "size": {
+                    "x": 20,
+                    "z": 20
+                }
+            },
+            "options": {
+                "stroke": {
+                    "weight": 5,
+                    "color": 4281872081
+                },
+                "fill": {
+                    "enabled": true
+                },
+                "tooltip": {
+                    "content": "Niagara Falls", //Tooltip Name
+                    "direction": 2,
+                    "sticky": true
+                },
+                "popup": {
+                    "content": "An example.", //HTML of the popup
+                    "offset": {
+                        "x": 2,
+                        "z": -8
+                    }
+                }
+            }
+        },
+        {
+            "type": "icon",
+            "data": {
                 "key": "Quebec",
                 "point": {
                         "x": -8524587, //Point Name
-                        "z": -6765299
+                        "z": -6762599
                 },
                 "image": "POI",
                 "anchor": {

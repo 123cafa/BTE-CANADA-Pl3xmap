@@ -31,7 +31,6 @@
 		}
 		.text {
 			grid-column: 1 / span 2;
-			background-color: darkblue;
 			padding: 10px;
 			border-radius: 25px;
 			background-image: url('images/Stone_Bricks.jpg');
@@ -60,11 +59,11 @@
 			object-fit: cover;
 		}
 		.warp_text {
-			color: red;
+			color: orange;
 
 		}
 		.warp_text:hover {
-			color: blue;
+			color: aqua;
 			text-decoration: underline;
 		}
 	</style>
@@ -72,10 +71,10 @@
 	<body>
 		<div class='container'>
 			<div class='img_large'>
-				<img src='images/img3.jpg' alt='img1' />
+				<img src='images/Calgary1.jpg' alt='img1' />
 					<div class='flags'>
-						<img src='images/BC.jpg' alt='flag 1'/>
-						<img src='images/Victoria.jpg' alt='flag 2'/>
+						<img src='images/AB.jpg' alt='flag 1'/>
+						<img src='images/Calgary_Flag.jpg' alt='flag 2'/>
 					</div>
 				<div class='title_text'>
 					<h2>Image text 1</h2>
@@ -84,25 +83,24 @@
 			<div class='text'>
 				<h1>Calgary, AB</h1>
 				<p style='color: snow;'>
-					Calgary is a city in Alberta. It was ranked as the third most livable city in the world in 2022. Here you can find the Telus Convention Centre and Canada's Olympic hall of fame which also contains Canada's Sports Hall of Fame.
+					Calgary is a city in Alberta. Ranked as the third most livable city in the world in 2022 it contains the most extensive walking and cycling pathway network in North America. Here you can find the Telus Convention Centre, Calgary Tower and, Canada's Olympic and Sports Hall's of Fame.
 				</p>
 				<p>
-					You can visit here by using<span class='warp_text' id='warp_text' onclick='copy_warp()'> /warp (Warp name)</span> on the server.
+					You can visit here by using<span class='warp_text' onclick='copy_warp()'> /warp Calgary</span> on the server.
 					<script>
 						function copy_warp() {
-							var warp_name = document.getElementById('warp_text');
-				  			navigator.clipboard.writeText(warp_name.value);
+				  			navigator.clipboard.writeText('/warp Calgary');
 				 			alert('Copied warp command');
 						}
 					</script>
 				</p>
 			</div>
 			<div class='img_small'>
-				<img src='images/jerma.jpg' alt='img2'/>
+				<img src='images/Calgary2.jpg' alt='img2'/>
 					<div class='image_text'>Image text 2</div>
 			</div>
 			<div class='img_small'>
-				<img src='images/img2.jpg' alt='img3'/>
+				<img src='images/Calgary3.jpg' alt='img3'/>
 					<div class='image_text'>Image text 3</div>
 			</div>
 		</div>
