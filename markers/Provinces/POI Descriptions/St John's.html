@@ -67,12 +67,6 @@
 			text-decoration: underline;
 		}
 	</style>
-	<script>
-		function copy_warp(warp_name) {
-  			navigator.clipboard.writeText(warp_name);
- 			alert('Copied warp command');
-		}
-	</script>
 	<body>
 		<div class='container'>
 			<div class='img_large'>
@@ -91,7 +85,7 @@
 					St John's is the capital of Nefoundland and Labrador. Sitting on the easternmost point of Canada, it was a common landing spot for ships traversing the ocean. This led to a tumultuous history as nations waged war to claim it. Downtown is mainly composed of historic fishermen homes, sheds and storage turned into housing. It earned the name <em>Jelly Bean Row</em> for its colorful tightly packed homes.
 				</p>
 				<p>
-					You can visit here by using <span class='warp_text' onclick='copy_warp(this.outerText)'>/warp StJohns</span> on the server.
+					You can visit here by using <span class='warp_text' onclick='navigator.clipboard.writeText(this.outerText)'>/warp StJohns</span> on the server.
 				</p>
 			</div>
 			<div class='img_small'>

@@ -67,12 +67,6 @@
 			text-decoration: underline;
 		}
 	</style>
-	<script>
-		function copy_warp(warp_name) {
-  			navigator.clipboard.writeText(warp_name);
- 			alert('Copied warp command');
-		}
-	</script>
 	<body>
 		<div class='container'>
 			<div class='img_large'>
@@ -90,7 +84,7 @@
 					Where every potential builder begins, the Trial Area is a practice grounds for those interested in becoming a builder. Here, you will buold your first house by following the provided tutorial. Visit the <span>#Become a Builder</span> channel in the discord to find more information.
 				</p>
 				<p>
-					You can visit here by using <span class='warp_text' onclick='copy_warp(this.outerText)'>/trial</span> on the server.
+					You can visit here by using <span class='warp_text' onclick='navigator.clipboard.writeText(this.outerText)'>/trial</span> on the server.
 				</p>
 			</div>
 			<div class='img_small'>
