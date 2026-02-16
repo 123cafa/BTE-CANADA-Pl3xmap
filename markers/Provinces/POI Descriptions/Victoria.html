@@ -1,17 +1,30 @@
 <html>
 	<style>
-		.container {
+		@font-face {
+			font-family: avenir;
+			src: url('fonts/Avenir Regular/Avenir Regular.ttf');
+		}
+		@font-face {
+			font-family: avenir_bold;
+			src: url('fonts/Avenir Heavy/Avenir Heavy.ttf');
+		}
+		.description_container {
 			display: grid;
 			grid-template-columns: auto auto;
 			gap: 10px;
 			padding: 10px;
-			width: 300px;
+			width: 280px;
 			background-image: url('images/Wood.png');
 			background-size: 50px;
+			font-family: avenir;
 		}
 		.img_small {
 			position: relative;
 			height: 75px;
+		}
+		.img_small:hover {
+			transform: scale(1.5);
+			z-index: 1000;
 		}
 		.img_small img {
 			height: 100%;
@@ -24,6 +37,10 @@
 			height: 150px;
 			object-fit: cover;
 		}
+		.img_large:hover {
+			transform: scale(1.5);
+			z-index: 1000;
+		}
 		.img_large img {
 			height: 100%;
 			width: 100%;
@@ -35,16 +52,24 @@
 			border-radius: 25px;
 			background-image: url('images/Stone_Bricks.png');
 			background-size: 50px;
+			color: black;
 		}
-		.title_text {
+		.image_top_text {
 			position: absolute;
 			bottom: -20px;
 			left: 10px;
+			color: snow;
+			font-size: 1.8rem;
 		}
-		.image_text {
+		.image_bottom_text {
 			position: absolute;
 			bottom: 1px;
 			left: 3px;
+			color: snow;
+		}
+		h1 {
+			font-family: avenir_bold;
+			margin: 0px auto;
 		}
 		.flags {
 			display: flex;
@@ -60,41 +85,73 @@
 		}
 		.warp_text {
 			color: orange;
-
+			cursor: pointer;
+			position: relative;
 		}
 		.warp_text:hover {
 			color: aqua;
 			text-decoration: underline;
+			white-space: nowrap;
+		}
+		.warp_text .copy_warp {
+			visibility: hidden;
+			width: 120px;
+			background-color: #555;
+			color: #fff;
+			text-align: center;
+			border-radius: 6px;
+			padding: 5px 0;
+			position: absolute;
+			z-index: 1;
+			bottom: 125%;
+			left: 50%;
+			margin-left: -60px;
+			opacity: 0;
+			transition: opacity 0.3s;
+		}
+		.tooltip .tooltiptext::after {
+			content: "";
+			position: absolute;
+			top: 100%;
+			left: 50%;
+			margin-left: -5px;
+			border-width: 5px;
+			border-style: solid;
+			border-color: #555 transparent transparent transparent;
+		}
+		.warp_text:hover .copy_warp {
+			visibility: visible;
+			opacity: 1;
 		}
 	</style>
 	<body>
-		<div class='container'>
+		<div class='description_container'>
 			<div class='img_large'>
-				<img src='images/Victoria1.png' alt='img1' />
+				<img src='images/BC/Victoria1.png' alt='img1' />
 					<div class='flags'>
-						<img src='images/BC.png' alt='flag 1'/>
-						<img src='images/Victoria_Flag.png' alt='flag 2'/>
+						<img src='images/BC/BC.png' alt='flag 1'/>
+						<img src='images/BC/Victoria_Flag.png' alt='flag 2'/>
 					</div>
-				<div class='title_text'>
-					<h2>Image text 1</h2>
+				<div class='image_top_text'>
+					<h3>Legislative Assembly</h3>
 				</div>
 			</div>
 			<div class='text'>
 				<h1>Victoria, BC</h1>
-				<p style='color: snow;'>
-					Victoria is the capital of British Columbia. Nicknamed <em>the Garden City </em>, it is famous for the Butchart Gardens, Fairmont Express hotel and its beautiful coastline. It also contains the oldest China Town in Canada.
+				<p style='color: snow; margin-top: 0px;'>
+					Victoria is the capital of British Columbia. Nicknamed <em>the Garden City</em>, it is famous for the Butchart Gardens, Fairmont Empress hotel and its beautiful coastline. It also contains the oldest China Town in Canada.
 				</p>
 				<p>
-					You can visit here by using <span class='warp_text' onclick='navigator.clipboard.writeText(this.outerText)'>/warp Victoria</span> on the server.
+					You can visit here by using <span class='warp_text' onclick='navigator.clipboard.writeText(this.childNodes[0].textContent)'>/warp Victoria<span class='copy_warp'>Click to copy me</span></span> on the server.
 				</p>
 			</div>
 			<div class='img_small'>
-				<img src='images/Victoria2.png' alt='img2'/>
-					<div class='image_text'>Image text 2</div>
+				<img src='images/BC/Victoria2.png' alt='img2'/>
+					<div class='image_bottom_text'></div>
 			</div>
 			<div class='img_small'>
-				<img src='images/Victoria3.png' alt='img3'/>
-					<div class='image_text'>Image text 3</div>
+				<img src='images/BC/Victoria3.png' alt='img3'/>
+					<div class='image_bottom_text'>Empress Hotel</div>
 			</div>
 		</div>
 	</body>
