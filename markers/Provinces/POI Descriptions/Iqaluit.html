@@ -1,0 +1,158 @@
+<html>
+	<style>
+		@font-face {
+			font-family: avenir;
+			src: url('fonts/Avenir Regular/Avenir Regular.ttf');
+		}
+		@font-face {
+			font-family: avenir_bold;
+			src: url('fonts/Avenir Heavy/Avenir Heavy.ttf');
+		}
+		.description_container {
+			display: grid;
+			grid-template-columns: auto auto;
+			gap: 10px;
+			padding: 10px;
+			width: 280px;
+			background-image: url('images/Wood.png');
+			background-size: 50px;
+			font-family: avenir;
+		}
+		.img_small {
+			position: relative;
+			height: 75px;
+		}
+		.img_small:hover {
+			transform: scale(1.5);
+			z-index: 1000;
+		}
+		.img_small img {
+			height: 100%;
+			width: 100%;
+			object-fit: cover;
+		}
+		.img_large {
+			position: relative;
+			grid-column: 1 / span 2;
+			height: 150px;
+			object-fit: cover;
+		}
+		.img_large:hover {
+			transform: scale(1.5);
+			z-index: 1000;
+		}
+		.img_large img {
+			height: 100%;
+			width: 100%;
+			object-fit: cover;
+		}
+		.text {
+			grid-column: 1 / span 2;
+			padding: 10px;
+			border-radius: 25px;
+			background-image: url('images/Stone_Bricks.png');
+			background-size: 50px;
+			color: black;
+		}
+		.image_top_text {
+			position: absolute;
+			bottom: -5px;
+			left: 10px;
+			color: snow;
+			font-size: 1.8rem;
+		}
+		.image_bottom_text {
+			position: absolute;
+			bottom: 1px;
+			left: 3px;
+			color: snow;
+		}
+		h1 {
+			font-family: avenir_bold;
+			margin: 0px auto;
+		}
+		.flags {
+			display: flex;
+			position: absolute;
+			top: 5px;
+			left: 3px;
+			padding: 10px;
+			gap: 10px;
+		}
+		.flags img {
+			height: 20px;
+			object-fit: cover;
+		}
+		.warp_text {
+			color: orange;
+			cursor: pointer;
+			position: relative;
+			white-space: nowrap;
+		}
+		.warp_text:hover {
+			color: aqua;
+			text-decoration: underline;
+		}
+		.warp_text .copy_warp {
+			visibility: hidden;
+			width: 120px;
+			background-color: #555;
+			color: #fff;
+			text-align: center;
+			border-radius: 6px;
+			padding: 5px 0;
+			position: absolute;
+			z-index: 1;
+			bottom: 125%;
+			left: 50%;
+			margin-left: -60px;
+			opacity: 0;
+			transition: opacity 0.3s;
+		}
+		.tooltip .tooltiptext::after {
+			content: '';
+			position: absolute;
+			top: 100%;
+			left: 50%;
+			margin-left: -5px;
+			border-width: 5px;
+			border-style: solid;
+			border-color: #555 transparent transparent transparent;
+		}
+		.warp_text:hover .copy_warp {
+			visibility: visible;
+			opacity: 1;
+		}
+	</style>
+	<body>
+		<div class='description_container'>
+			<div class='img_large'>
+				<img src='images/NU/Iqaluit1.png' alt='img1' />
+					<div class='flags'>
+						<img src='images/NU/NU.png' alt='flag 1'/>
+						<img src='images/NU/Iqaluit_Flag.png' alt='flag 2'/>
+					</div>
+				<div class='image_top_text'>
+					<h3></h3>
+				</div>
+			</div>
+			<div class='text'>
+				<h1>Iqaluit, NU</h1>
+				<p style='color: snow; margin-top: 0px;'>
+					Iqaluit is the capital and only city in Nunavut. It is the northermost city in Canada and enjoys Aurora Borealis year round. Mostly inhabited by Inuits, many buildings incorporate Inuit art designs. St. Jude's Anglican Cathedral is shaped like an igloo, its altar shaped like a sled and the cross is composed of two crossed narwhal tusks.
+				</p>
+				<p>
+					You can visit here by using <span class='warp_text' onclick='navigator.clipboard.writeText(this.childNodes[0].textContent)'>/warp Iqaluit<span class='copy_warp'>Click to copy me</span></span> on the server.
+				</p>
+			</div>
+			<div class='img_small'>
+				<img src='images/NU/Iqaluit2.png' alt='img2'/>
+					<div class='image_bottom_text'></div>
+			</div>
+			<div class='img_small'>
+				<img src='images/NU/Iqaluit3.png' alt='img3'/>
+					<div class='image_bottom_text'></div>
+			</div>
+		</div>
+	</body>
+</html>
