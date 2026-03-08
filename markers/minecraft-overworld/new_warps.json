@@ -2,7 +2,7 @@
 // Pin used: https: www.flaticon.com/free-icon/push-pin_6746928
 {
     "key": "New_Warps", //Internal ID
-    "label": "New_Warps", //Name in control box
+    "label": "Warps", //Name in control box
     "updateInterval": 60, //In seconds
     "showControls": true, //Show in control box
     "defaultHidden": false, //Hidden when map is first opened
@@ -15,8 +15,8 @@
             "data": {
                 "key": "Calgary",
                 "point": {
-                        "x": -11681074,
-                        "z": -7012448
+                        "x": -11681073,
+                        "z": -7102448
                 },
                 "image": "pin",
                 "anchor": {
